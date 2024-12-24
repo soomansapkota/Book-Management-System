@@ -12,7 +12,7 @@
     <!-- Tomato color theme for the page -->
     <style>
         body {
-            background-color: #f1e7e7; /* Tomato background */
+            background-color: #c6efc0; /* Tomato background */
             color: white;
             font-family: Arial, sans-serif;
         }
@@ -26,16 +26,16 @@
         }
 
         .btn-tomato {
-            background-color: #ff6347; /* Tomato button */
+            background-color: #59f15b; /* Tomato button */
             color: white;
         }
 
         .btn-tomato:hover {
-            background-color: #e5533e; /* Darker shade on hover */
+            background-color: #59f15b; /* Darker shade on hover */
         }
 
         h1 {
-            color: #ff6347; /* Tomato color for heading */
+            color: #59f15b; /* Tomato color for heading */
         }
     </style>
 </head>

@@ -8,7 +8,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #e3c7c7; /* Tomato color */
+            background-color: #def1dc; /* Tomato color */
             color: white;
             font-family: Arial, sans-serif;
         }
@@ -21,16 +21,16 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .head{
-            color: #e5533e;
+            color: #59f15b;
         }
 
         .btn-tomato {
-            background-color: #ff6347;
+            background-color: #59f15b;
             color: white;
         }
 
         .btn-tomato:hover {
-            background-color: #e5533e;
+            background-color: #59f15b;
         }
 
         .edit-form {
@@ -73,7 +73,7 @@
     </form>
 
     <br>
-    <a href="index.jsp" class="btn btn-primary">Back to Book List</a>
+    <a href="/" class="btn btn-primary">Back to Book List</a>
 </div>
 
 <!-- Bootstrap JS and dependencies -->

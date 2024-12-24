@@ -11,15 +11,12 @@
 <body>
 
 <header>
-    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: tomato">
-        <div>
-            <a href="http://localhost:8080/" class="navbar-brand"> Book
-                Management App </a>
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #59f15b">
+        <div class="container-fluid">
+            <span class="navbar-brand mx-auto fs-3 fw-bold text-center">
+                Book Management App
+            </span>
         </div>
-
-        <ul class="navbar-nav">
-            <li><a href="<%=request.getContextPath()%>/" class="nav-link">Books</a></li>
-        </ul>
     </nav>
 </header>
 <br>
@@ -27,14 +24,16 @@
 <div class="row">
     <!-- <div class="alert alert-success" *ngIf='message'>{{message}}</div> -->
 
-    <div class="container">
-        <h3 class="text-center">List of Books</h3>
-        <hr>
-        <div class="container text-left">
+    <span class="container">
+        <span class="container text-left">
 
             <a href="<%=request.getContextPath()%>/new" class="btn btn-success">Add
                 New Book</a>
-        </div>
+        </span>
+        <hr>
+        <h3 class="text-center">Book List :</h3>
+        <hr>
+
         <br>
         <table class="table table-bordered">
             <thead>
@@ -59,14 +58,16 @@
                     <td>
                         <c:out value="${book.isbn}" />
                     </td>
-                    <td><a href="edit?id=<c:out value='${book.id}' />">Edit</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="delete?id=<c:out value='${book.id}' />">Delete</a></td>
+                    <td><a href="edit?id=<c:out value='${book.id}' />">Edit</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="delete?id=<c:out value='${book.id}' />">Delete</a>
+                    </td>
                 </tr>
             </c:forEach>
             <!-- } -->
             </tbody>
 
         </table>
-    </div>
+    </span>
 </div>
 </body>
 
